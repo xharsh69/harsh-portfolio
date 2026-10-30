@@ -4,7 +4,7 @@ import { profile } from "../data/portfolio";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "dark"
+    localStorage.getItem("theme") || "light"
   );
   const links = ["About", "Services", "Skills", "Projects", "Experience", "Contact"];
 

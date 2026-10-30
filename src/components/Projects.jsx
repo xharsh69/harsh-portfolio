@@ -14,7 +14,7 @@ export default function Projects() {
       >
         {projects.map((p) => (
           <div key={p.title} className="card">
-            <span style={{ color: "var(--purple)", fontSize: "0.8rem" }}>
+            <span style={{ color: "var(--primary)", fontSize: "0.8rem" }}>
               {p.status}
             </span>
             <h3 style={{ marginTop: "6px" }}>{p.title}</h3>

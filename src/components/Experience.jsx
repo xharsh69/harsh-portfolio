@@ -7,7 +7,7 @@ export default function Experience() {
       <div style={{ marginTop: "24px", display: "grid", gap: "16px" }}>
         {journey.map((item) => (
           <div key={item.title} className="card">
-            <span style={{ color: "var(--purple)", fontSize: "0.8rem" }}>
+            <span style={{ color: "var(--primary)", fontSize: "0.8rem" }}>
               {item.status}
             </span>
             <h3 style={{ marginTop: "6px" }}>{item.title}</h3>
