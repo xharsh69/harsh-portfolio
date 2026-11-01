@@ -1,3 +1,5 @@
+// paste your Formspree link between the quotes later, like "https://formspree.io/f/xxxxxxxx"
+export const formEndpoint = "";
 export const profile = {
   name: "Harsh",
   headline: "AI Automation & Agentic AI Developer",
@@ -30,22 +32,31 @@ export const services = [
 
 export const projects = [
   {
+    title: "Portfolio Website",
+    desc: "Responsive portfolio built with React and Vite, with a custom cursor, theme switch and a chatbot demo.",
+    tags: ["React", "Vite", "CSS"],
+    status: "Live",
+    demo: "https://harsh-portfolio-rouge-rho.vercel.app",
+    github: "https://github.com/xharsh69/harsh-portfolio",
+    image: "",
+  },
+  {
     title: "Email Summarizer Automation",
-    desc: "Python script that reads emails and creates short summaries.",
-    tech: "Python, AI API",
+    desc: "Python script that reads emails and writes short summaries.",
+    tags: ["Python", "AI API"],
     status: "In progress",
+    demo: "",
+    github: "",
+    image: "",
   },
   {
     title: "Research Agent",
     desc: "LangChain agent that searches the web and writes a short report.",
-    tech: "Python, LangChain",
+    tags: ["Python", "LangChain"],
     status: "Planned",
-  },
-  {
-    title: "This Portfolio Website",
-    desc: "Cyberpunk portfolio built from scratch with React and Vite.",
-    tech: "React, Vite, CSS",
-    status: "In progress",
+    demo: "",
+    github: "",
+    image: "",
   },
 ];
 
@@ -100,3 +111,25 @@ export const botReplies = [
 
 export const botFallback =
   "I'm a simple demo bot. Try asking about skills, services, projects or contact.";
+
+
+export const aboutParagraphs = [
+  "Hi! I'm Harsh, a developer focused on AI automation and agentic AI.",
+  "I'm learning Python and LangChain, and I turn what I learn into real, working projects, like this portfolio you're looking at.",
+  "I'm open to freelance work building automations and AI agents that save people time.",
+];
+
+export const aboutCards = [
+  {
+    title: "Learning",
+    lines: ["Python", "LangChain", "Agentic AI"],
+  },
+  {
+    title: "Experience",
+    lines: ["Freelance on Upwork", "Open to AI automation projects"],
+  },
+  {
+    title: "Tools",
+    lines: ["VS Code, Git & GitHub", "Python, React, Vite"],
+  },
+];

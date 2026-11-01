@@ -1,4 +1,11 @@
 import { profile, contact } from "../data/portfolio";
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  MailIcon,
+  InstagramIcon,
+  UpworkIcon,
+} from "./Icons";
 
 // splits text into single letters so each one can zoom on its own
 function Letters({ text }) {
@@ -18,6 +25,14 @@ function Letters({ text }) {
 }
 
 export default function Hero() {
+  const accounts = [
+    { name: "GitHub", href: contact.github, icon: <GitHubIcon /> },
+    { name: "LinkedIn", href: contact.linkedin, icon: <LinkedInIcon /> },
+    { name: "Upwork", href: contact.upwork, icon: <UpworkIcon /> },
+    { name: "Instagram", href: contact.instagram, icon: <InstagramIcon /> },
+    { name: "Email", href: `mailto:${contact.email}`, icon: <MailIcon /> },
+  ];
+
   return (
     <section className="hero">
       <div>
@@ -43,6 +58,23 @@ export default function Hero() {
       </div>
 
       <div className="hero-photo">
+        <div className="orbit">
+          {accounts.map((a, i) => (
+            <a
+              key={a.name}
+              className="orbit-item"
+              style={{ "--i": i, "--n": accounts.length }}
+              href={a.href}
+              target={a.href.startsWith("mailto:") ? undefined : "_blank"}
+              rel="noreferrer"
+              aria-label={a.name}
+              title={a.name}
+            >
+              <span className="orbit-icon">{a.icon}</span>
+            </a>
+          ))}
+        </div>
+
         <img src="/profile.png" alt="Harsh" className="avatar" />
         <div className="avail-card">
           <p>
